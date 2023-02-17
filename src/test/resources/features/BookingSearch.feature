@@ -4,8 +4,8 @@ Feature: Booking search tests
     Given I am on www.booking.com page
     When I set city "<searchValue>" into search bar
     And I click search button
-    Then Should be present "<result>" with "<index>"
-    Then Hotel with "<index>" should have been "<rating>"
+    Then Should be present "<result>" with <index>
+    Then Hotel with <index> should have been "<rating>"
     Examples:
       |searchValue|result|rating|index|
     |London|President Hotel|7.3|1|
