@@ -51,13 +51,13 @@ public class BookingSearchSteps {
     }
 
     @Then("Should be present {string} with {int}")
-    public void shouldBePresentHotel(String value, int index) {
+    public void shouldBePresentWith(String value, int index) {
         String result = bookingResultPage.getSearchResultByIndex(index);
         Assert.assertTrue(result.equals(value));
     }
 
     @Then("Hotel with {int} should have been {string}")
-    public void hotelWithIndexShouldHaveBeenRating(int index, String value) {
+    public void hotelWithShouldHaveBeen(int index, String value) {
         String rating = bookingResultPage.getSearchResulRatingByIndex(index);
         Assert.assertTrue(rating.equals(value));
     }
